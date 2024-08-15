@@ -464,7 +464,7 @@ footer p {
   background-color: hsl(172, 87%, 53%);
   color: hsl(0, 0%, 100%);
 
-  padding: 14px;
+  padding: 10px;
   border-radius: 4px;
   box-shadow: -3px 3px 15px hsla(335, 87%, 53%, 0.5);
   z-index: 2;
