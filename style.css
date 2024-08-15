@@ -456,3 +456,30 @@ footer {
 footer p {
   text-align: center;
 }
+
+.go-top {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  background-color: hsl(172, 87%, 53%);
+  color: hsl(0, 0%, 100%);
+
+  padding: 14px;
+  border-radius: 4px;
+  box-shadow: -3px 3px 15px hsla(335, 87%, 53%, 0.5);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.15s ease;
+}
+
+.go-top img {
+  width: 17px;
+  background-color: hsl(172, 87%, 53%);
+}
+
+.go-top.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-15px);
+}
