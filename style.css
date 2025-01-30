@@ -2,10 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
   background: #000;
   color: #fff;
 }
@@ -98,7 +101,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: #fff;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -106,7 +109,7 @@ a:hover {
   top: 100%;
   right: 0;
   background-color: white;
-  width: fit-content;
+  transition: all 0.3s ease-in-out;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
@@ -178,8 +181,8 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   margin: auto 0;
 }
 
@@ -254,7 +257,7 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
+.btn-color-1:hover,
 .btn-color-2:hover {
   background: #ffffff;
   color: #000;
@@ -262,7 +265,7 @@ section {
 
 .btn-color-1:hover {
   background: #fff;
-  border: #fff;
+  border: 1px solid #fff;
 }
 
 .btn-color-2 {
@@ -421,7 +424,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
