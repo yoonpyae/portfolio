@@ -525,7 +525,7 @@ footer p {
 
   padding: 10px;
   border-radius: 4px;
-  box-shadow: -3px 3px 15px hsla(335, 87%, 53%, 0.5);
+  box-shadow: -3px 3px 15px hsla(168, 87%, 53%, 0.5);
   z-index: 2;
   visibility: hidden;
   opacity: 0;
