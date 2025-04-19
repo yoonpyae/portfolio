@@ -169,6 +169,9 @@ section {
 
 .section-container {
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
 }
 
 /* PROFILE SECTION */
@@ -408,6 +411,15 @@ article .icon {
 
 .details-container .btn-container {
   background: #fff;
+}
+
+.project-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 /* CONTACT */
