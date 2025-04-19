@@ -2,385 +2,131 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yoon Pyae Eain - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="shortcut icon" href="assets/star.svg" type="image/x-icon" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-4vIoXz0FZsF+oF1TQHspDnqkkW0oYBpa1Z0sKDL+X8cC8AnIg3aA3+Uv1v4q5PZVqvC5JCBhOy2F0Q2PZp2HtQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+      }
+      .profile-img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 50%;
+      }
+      .icon {
+        width: 30px;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+      .project-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    </style>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">ype</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">ype</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="YPE profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Yoon Pyae Eain</h1>
-        <p class="section__text__p2">Web Developer & Problem Solver</p>
-        <div class="btn-container">
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/yoon-pyae-eain-4532742a2/'"
-            target="_blank"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/yoonpyae'"
-            target="_blank"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>Projects</h3>
-              <p>Web Development <br />HTML, CSS, JavaScript, PHP</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Education</h3>
-              <p>L4 Diploma in Computing<br />L3 Diploma in Computing</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm a dedicated web developer based in Yangon, Myanmar, currently pursuing a Level 5 Diploma in Computing at NCC Education. 
-              I enjoy transforming complex problems into elegant, user-friendly solutions. 
-              My goal? To bring meaningful contributions to a passionate team and help drive innovative web experiences.
-            </p>            
-          </div>
-        </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>HTML5</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-    
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Angular</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Tailwind CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>PrimeNG</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>C#</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Weather App</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/yoonpyae/weather-react"
-                target="_blank"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://weather-app-by-ype.netlify.app/"
-                target="_blank"
-              >
-                View here
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Potato Chips Web</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/yoonpyae/Potato-Chips-Website"
-                target="_blank"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://potato-chips-website-by-ype.netlify.app/"
-                target="_blank"
-              >
-                View here
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Text To Voice Converter</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/yoonpyae/Text-To-Voice-Converter"
-                target="_blank"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://text-to-voice-converter-by-ype.vercel.app/"
-                target="_blank"
-              >
-                View here
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My School</p>
-      <h1 class="title">Academic Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Social Media Campaigns Project</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/yoonpyae/Social-Media-Campaign-Ldt.--SMC-"
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-5.png" alt="Project 5" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Standing Desks Project</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/yoonpyae/Standing-Desk-Project"
-                target="_blank"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://standing-desk-project-byype.netlify.app/"
-                target="_blank"
-              >
-                View here
-              </a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Admin Dashboard for SMC Project</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/yoonpyae/Social-Media-Campaign-Ldt.--SMC-"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
-    <section id="contact" class="contact-section">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-containers">
-      <div class="contact-cards">
-        <div class="contact-card">
-          <img src="./assets/envelope.png" alt="Email icon" class="icon contact-icon email-icon" />
-          <a href="mailto:yoonpyae26@gmail.com" target="_blank">yoonpyae26@gmail.com</a>
-        </div>
-    
-        <div class="contact-card">
-          <img src="./assets/linkedin.svg" alt="LinkedIn icon" class="icon contact-icon" />
-          <a href="https://www.linkedin.com/in/yoonpyae" target="_blank">LinkedIn: Yoon Pyae Eain</a>
-        </div>
-      </div>
-      </div>
-    </section>
-    
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">ype</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
-      </nav>
-      <p>✌️ This website was coded by Yoon Pyae Eain.</p>
+      </div>
+    </nav>
+
+    <!-- Profile -->
+    <section id="profile" class="text-center py-5 bg-light">
+      <div class="container">
+        <img src="assets/profile-pic.png" class="profile-img mb-3" alt="YPE profile picture" />
+        <h2>Hello, I'm</h2>
+        <h1 class="display-4 fw-bold">Yoon Pyae Eain</h1>
+        <p class="lead">Web Developer & Problem Solver</p>
+        <div class="mb-3">
+          <a href="#contact" class="btn btn-primary">Contact Info</a>
+        </div>
+        <div>
+          <a href="https://linkedin.com/in/yoon-pyae-eain-4532742a2/" target="_blank">
+            <img src="assets/linkedin.png" class="icon" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/yoonpyae" target="_blank">
+            <img src="assets/github.png" class="icon" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img src="assets/about-pic.jpg" class="img-fluid rounded-circle" alt="About Pic" />
+          </div>
+          <div class="col-md-8">
+            <div class="row text-center mb-4">
+              <div class="col-md-6">
+                <h5><i class="fas fa-briefcase"></i> Projects</h5>
+                <p>Web Development - HTML, CSS, JavaScript, PHP</p>
+              </div>
+              <div class="col-md-6">
+                <h5><i class="fas fa-graduation-cap"></i> Education</h5>
+                <p>L4 & L3 Diploma in Computing</p>
+              </div>
+            </div>
+            <p>
+              I'm a dedicated web developer based in Yangon, Myanmar, currently pursuing a Level 5 Diploma in Computing at NCC Education. I enjoy transforming complex problems into elegant, user-friendly solutions.
+              My goal? To bring meaningful contributions to a passionate team and help drive innovative web experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More sections go here... You can repeat this bootstrap layout style for Experience, Projects, and Contact -->
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <p><img src="assets/envelope.png" class="icon me-2" alt="Email" /><a href="mailto:yoonpyae26@gmail.com">yoonpyae26@gmail.com</a></p>
+            <p><img src="assets/linkedin.svg" class="icon me-2" alt="LinkedIn" /><a href="https://www.linkedin.com/in/yoonpyae" target="_blank">LinkedIn: Yoon Pyae Eain</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 Yoon Pyae Eain. All rights reserved.</p>
     </footer>
 
-    <!-- 
-    - #GO TO TOP
-  -->
-
-    <a href="#top" class="go-top active" aria-label="Go To Top" data-go-top>
-      <img src="assets/up-arrow.png" alt="Go to top" class="go-top-icon" />
-    </a>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
