@@ -463,6 +463,61 @@ article .icon {
   height: 2.5rem;
 }
 
+.contact-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #3f72af;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  color: #3f72af;
+}
+
 /* FOOTER SECTION */
 
 footer {
