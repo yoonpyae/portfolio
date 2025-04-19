@@ -490,9 +490,10 @@ article .icon {
   transform: translateY(-5px);
 }
 
-.contact-icon {
+.contact-icon .icon {
   font-size: 1.5rem;
   color: #3f72af;
+  height: 1.5rem;
 }
 
 .contact-card a {
