@@ -52,11 +52,9 @@ nav {
 }
 
 a {
-  color: #fff;
   text-decoration: none;
-  text-decoration-color: white;
   font-family: "BioRhyme", serif;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 a:hover {
