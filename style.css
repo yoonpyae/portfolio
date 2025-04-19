@@ -518,6 +518,10 @@ footer p {
   text-align: center;
 }
 
+footer a{
+  color: #fff;
+}
+
 .go-top {
   position: fixed;
   bottom: 0;
