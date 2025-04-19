@@ -449,7 +449,7 @@ article .icon {
   margin: 1rem;
 }
 
-.contact-info-container p {
+.contact-info-container a {
   font-size: larger;
   color: #000;
 }
