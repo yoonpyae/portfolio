@@ -53,6 +53,7 @@ nav {
 
 a {
   text-decoration: none;
+  color: #fff;
   font-size: 13px;
 }
 
@@ -521,10 +522,6 @@ footer {
 
 footer p {
   text-align: center;
-}
-
-footer a{
-  color: #fff;
 }
 
 .go-top {
