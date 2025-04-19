@@ -427,6 +427,11 @@ article .icon {
   flex-direction: column;
 }
 
+.contact-containers{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
