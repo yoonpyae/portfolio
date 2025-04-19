@@ -447,6 +447,7 @@ article .icon {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+  color: #000;
 }
 
 .contact-info-container a {
